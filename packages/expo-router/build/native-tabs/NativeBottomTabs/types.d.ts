@@ -61,6 +61,10 @@ export interface NativeTabsStyleType {
     tintColor?: ColorValue;
     badgeBackgroundColor?: ColorValue;
     /**
+     * @platform web
+     */
+    badgeTextColor?: ColorValue;
+    /**
      * @platform android
      */
     rippleColor?: ColorValue;
@@ -70,16 +74,19 @@ export interface NativeTabsStyleType {
     labelVisibilityMode?: TabBarItemLabelVisibilityMode;
     /**
      * @platform android
+     * @platform web
      */
     '&:active'?: NativeTabsActiveStyleType;
 }
 export interface NativeTabsActiveStyleType {
     /**
      * @platform android
+     * @platform web
      */
     color?: ColorValue;
     /**
      * @platform android
+     * @platform web
      */
     fontSize?: TextStyle['fontSize'];
     /**
@@ -88,6 +95,7 @@ export interface NativeTabsActiveStyleType {
     iconColor?: ColorValue;
     /**
      * @platform android
+     * @platform web
      */
     indicatorColor?: ColorValue;
 }
